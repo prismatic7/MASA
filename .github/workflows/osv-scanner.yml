@@ -24,3 +24,4 @@ jobs:
       # on a private repo without GHAS — reddening the job on every push. The scan
       # itself still fails the job on findings. Flip to true on a repo with GHAS.
       upload-sarif: false
+      scan-args: --recursive ./ --lockfile=pnpm-lock.yaml
